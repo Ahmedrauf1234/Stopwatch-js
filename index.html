@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .watch {
+           display: flex;
+           flex-wrap: wrap;  
+           align-items: center;
+           justify-content: center;
+           gap: 40px;
+        }
+        .btn{
+            text-align: center;
+            /* padding: 2px; */
+            margin-top: 10px;
+        }
+        .btn button{
+            width: 70px;
+            padding: 6px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            background-color: aqua;
+            border: 1px solid white;
+        }
+        .watch h1{
+            border: 1px solid black;
+            width: 40px;
+            text-align: center;
+        }
+        .text{
+            text-align: center;
+        }
+        @media(max-width:300px){
+            .watch h1{
+                width: 20px;
+                gap: 10px;
+                font-size: 19px;
+            }
+        }
+        @media(max-width:230px){
+            .watch h1{
+                width: 15px;
+                gap: 8px;
+                font-size: 11px;
+            }
+        }
+        .parant{
+            border: 1px solid black;
+            width: 400px;
+            height: 300px;
+            margin: auto;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="parant">
+    <h1 class="text">Stop watch</h1>
+    
+    <div class="watch">
+        
+        <h1 id="hour">0</h1>
+        <h1 id="min">0</h1>
+        <h1 id="sec">0</h1>
+        <h1 id="msec">0</h1>
+        
+     </div>
+     
+<div class="btn">
+     <button id="dis" onclick="start()">Start</button>
+     <button onclick="stop()">Stop</button>
+     <button onclick="reset()">Reset</button>
+    </div>
+</div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
